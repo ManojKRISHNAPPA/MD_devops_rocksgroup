@@ -1,2 +1,7 @@
-hello welcome to devops session!!!!!
-This is the new project.
+#!/bin/bash
+
+for i in 1 2 3 4 5
+do 
+ echo "welocme $i ti times"
+
+done
