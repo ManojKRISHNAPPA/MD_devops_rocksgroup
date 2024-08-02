@@ -1,2 +1,0 @@
-hello welcome to devops session!!!!!
-This is the new project.
