@@ -1,14 +1,14 @@
 pipeline{
     agent any
     stages{
-        stage('multistep stage')
-        steps{
-            sh 'echo "This is multistep" '
-            sh '''
-                echo  "By the way, i can do more stuff here..
-                ls -lah
-            '''
+        stage('multistep stage'){
+            steps{
+                sh 'echo "This is multistep" '
+                sh '''
+                    echo  "By the way, i can do more stuff here..
+                    ls -lah
+                '''
+            }
         }
-
     }
 }
