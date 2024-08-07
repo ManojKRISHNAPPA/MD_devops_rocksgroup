@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background: #002f6c;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background: #004c9d;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            padding: 20px;
+            background: #fff;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .hero {
+            background: url('olympics-hero.jpg') no-repeat center center/cover;
+            height: 300px;
+            border-radius: 8px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #002f6c;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            line-height: 1.6;
+        }
+
+        .footer {
+            background: #002f6c;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .hero {
+                height: 200px;
+            }
+
+            .hero h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Olympic Games</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <div class="hero">
+            <h2>Welcome to the Olympics</h2>
+        </div>
+        <div class="section" id="home">
+            <h2>Home</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Nullam dictum tortor ac orci lacinia, sed ultrices nulla vehicula. Suspendisse potenti.</p>
+        </div>
+        <div class="section" id="about">
+            <h2>About the Olympics</h2>
+            <p>The Olympic Games are a major international multi-sport event that occurs every four years. The Games are considered the world's foremost sports competition with more than 200 nations participating.</p>
+        </div>
+        <div class="section" id="events">
+            <h2>Events</h2>
+            <p>The Olympics feature a wide range of sports including athletics, swimming, gymnastics, and more. Athletes from around the world compete for gold, silver, and bronze medals in various events.</p>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need more information about the Olympic Games, please feel free to <a href="mailto:info@olympics.com">contact us</a>.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 The Olympic Games. All rights reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
+

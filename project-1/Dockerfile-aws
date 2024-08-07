@@ -1,0 +1,12 @@
+FROM centos
+COPY
+RUN
+ADD
+CMD
+ENTRYPOINT
+EXPOSE
+ENV
+
+
+
+
