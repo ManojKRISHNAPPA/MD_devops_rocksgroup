@@ -5,7 +5,7 @@ pipeline{
             steps{
                 sh 'echo "This is multisteping.."'
                 sh ...
-                    echo "Working on Multistep"
+                    echo "Working on Multistep..."
                     ls -lah
                 ...
             }
