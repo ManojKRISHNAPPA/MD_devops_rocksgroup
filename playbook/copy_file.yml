@@ -1,0 +1,11 @@
+---
+- name: this plyabook copy the file from admin to all prod serves
+  hosts: all
+    #become: true
+  tasks:
+  - name: copy a file
+    copy:
+      src: /home/ansadmin/index.html
+      dest: /home/ansadmin/microdegree
+      mode: 0777
+      owner: ansadmin
