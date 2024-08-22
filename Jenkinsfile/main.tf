@@ -1,11 +1,25 @@
 provider "aws" {
-    region = "us-east-1"  
+    region = "us-east-1"
 }
 
 resource "aws_instance" "ec2" {
-  ami           = "ami-0ae8f15ae66fe8cda" 
-  instance_type = "t2.micro"
-  tags = {
-      Name = "Final-instace"
-  }
+    ami = "ami-066784287e358dad1"
+    instance_type = "t2.micro"
+    count = "1"
+    security_groups = ["default"]
+    key_name = "kiran"
+    tags = {
+      Name = "grafan"
+    }
+}
+
+resource "aws_instance" "ec2" {
+    ami = "ami-066784287e358dad1"
+    instance_type = "t2.micro"
+    count = "1"
+    security_groups = ["default"]
+    key_name = "kiran"
+    tags = {
+      Name = "Node-port"
+    }
 }
